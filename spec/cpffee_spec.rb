@@ -2,9 +2,23 @@
 #-*- mode: ruby; coding: utf-8 -*-
 # file: cpffee_spec.rb
 #    Created:       <2019/07/16 14:32:31>
-#    Last Modified: <2019/07/16 14:36:11>
+#    Last Modified: <2019/07/16 14:49:11>
 
 # frozen_string_literal: true
+
+class Coffee
+  def ingredients
+    @ingredients ||= []
+  end
+
+  def add(ingredient)
+    ingredients << ingredient
+  end
+
+  def price
+    1.00
+  end
+end
 
 RSpec.describe 'A cup of coffee' do
   let(:coffee) { Coffee.new }
