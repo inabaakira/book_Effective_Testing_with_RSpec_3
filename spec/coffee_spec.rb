@@ -2,7 +2,7 @@
 #-*- mode: ruby; coding: utf-8 -*-
 # file: cpffee_spec.rb
 #    Created:       <2019/07/16 14:32:31>
-#    Last Modified: <2019/07/16 17:08:47>
+#    Last Modified: <2019/07/16 17:24:03>
 
 # frozen_string_literal: true
 
@@ -38,7 +38,14 @@ RSpec.describe 'A cup of coffee' do
       expect(coffee.price).to eq(1.25)
     end
 
-    it 'is light in color'
-    it 'is cooler than 200 degrees Fahrenheit'
+    it 'is light in color' do
+      pending 'Color not implemented yet'
+      expect(coffee.color).to be(:light)
+    end
+
+    it 'is cooler than 200 degrees Fahrenheit' do
+      pending 'Temperature not implemented yet'
+      expect(coffee.temperature).to be < 200.0
+    end
   end
 end
