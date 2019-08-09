@@ -52,3 +52,4 @@ build-iPhoneSimulator/
 
 .bundle
 vendor
+expense_tracker/spec/examples.txt
