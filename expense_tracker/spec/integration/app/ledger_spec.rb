@@ -1,7 +1,6 @@
 # frozen-string-literal: true
 
 require_relative '../../../app/ledger'
-require_relative '../../../config/sequel'
 require_relative '../../support/db'
 
 module ExpenseTracker
